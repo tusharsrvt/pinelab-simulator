@@ -1,0 +1,70 @@
+{
+  "numberOfAccounts": $NUMBER_OF_ACCOUNTS$,
+  "totalAccounts": $TOTAL_ACCOUNTS$,
+  "totalAmount": $TOTAL_AMOUNT$,
+  "transactionId": $TRANSACTION_ID$,
+  "accounts": [
+    {
+      "preXactionAccountBalanceInNativeCurrency": "$PRE_XACTION_BALANCE_NATIVE$",
+      "preXactionAccountBalanceInNativeCurrencyWithSymbol": "$PRE_XACTION_BALANCE_SYMBOL$",
+      "programGroupType": "$PROGRAM_GROUP_TYPE$",
+      "reusable": $REUSABLE$,
+      "approvalCode": "$APPROVAL_CODE$",
+      "totalRedeemedAmount": $TOTAL_REDEEMED_AMOUNT$,
+      "totalReloadedAmount": $TOTAL_RELOADED_AMOUNT$,
+      "transactionAmount": $TRANSACTION_AMOUNT$,
+      "transactionDateTime": "$TRANSACTION_DATE_TIME$",
+      "transferAccountBalance": $TRANSFER_ACCOUNT_BALANCE$,
+      "transferable": $TRANSFERABLE$,
+      "number": "$ACCOUNT_NUMBER$",
+      "totalPreAuthAmount": $TOTAL_PRE_AUTH_AMOUNT$,
+      "responseCode": $RESPONSE_CODE$,
+      "notes": "$NOTES$",
+      "accountBehaviourTypeId": $ACCOUNT_BEHAVIOUR_TYPE_ID$,
+      "accountCreationType": "$ACCOUNT_CREATION_TYPE$",
+      "accountCurrencySymbol": "$ACCOUNT_CURRENCY_SYMBOL$",
+      "accountIssuingMode": "$ACCOUNT_ISSUING_MODE$",
+      "accountNativeBalanceWithoutSymbol": "$ACCOUNT_NATIVE_BALANCE$",
+      "accountStatus": "$ACCOUNT_STATUS$",
+      "accountStatusId": $ACCOUNT_STATUS_ID$,
+      "accountType": "$ACCOUNT_TYPE$",
+      "activationAmount": $ACTIVATION_AMOUNT$,
+      "activationDate": "$ACTIVATION_DATE$",
+      "adjustmentAmount": $ADJUSTMENT_AMOUNT$,
+      "balance": $BALANCE$,
+      "currencyCode": "$CURRENCY_CODE$",
+      "currencyConversionRate": $CURRENCY_CONVERSION_RATE$,
+      "currencyConvertedXactionAmount": $CURRENCY_CONVERTED_XACTION_AMOUNT$,
+      "customerDetails": {
+        "FirstName": "$FIRST_NAME$",
+        "LastName": "$LAST_NAME$"
+      },
+      "expiryDate": "$EXPIRY_DATE$",
+      "invoiceNumber": "$INVOICE_NUMBER$",
+      "issuerName": "$ISSUER_NAME$",
+      "nativeAccountBalance": $NATIVE_ACCOUNT_BALANCE$,
+      "nativeCurrencyCode": "$NATIVE_CURRENCY_CODE$",
+      "responseMessage": "$RESPONSE_MESSAGE$",
+      "payerName": "$PAYER_NAME$",
+      "payerVPA": "$PAYER_VPA$",
+      "pockets": [
+        {
+          "Balance": $PPI_POCKET_BALANCE$,
+          "PocketType": "PPI"
+        },
+        {
+          "Balance": $NCMC_POCKET_BALANCE$,
+          "PendingUpdateAmount": $NCMC_PENDING_UPDATE_AMOUNT$,
+          "PocketType": "NCMC Virtual Account"
+        }
+      ],
+      "preXactionAccountBalance": $PRE_XACTION_ACCOUNT_BALANCE$
+    }
+  ],
+  "approvalCode": "$APPROVAL_CODE_TOP$",
+  "responseCode": $RESPONSE_CODE_TOP$,
+  "responseMessage": "$RESPONSE_MESSAGE$",
+  "notes": "$NOTES_TOP$",
+  "currentBatchNumber": $CURRENT_BATCH_NUMBER$,
+  "idempotencyKey": "$IDEMPOTENCY_KEY$"
+}

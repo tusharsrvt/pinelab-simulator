@@ -1,0 +1,127 @@
+# Response Codes and Messages Configuration
+# This file contains all possible response codes and their corresponding messages
+
+response-codes:
+  # Success
+  "0000": "Transaction Successful"
+  
+  # Authorization / Card Issues
+  "10001": "Card expired."
+  "10002": "Card is deactivated."
+  "10004": "Either Card Number or Card Pin is Incorrect."
+  "10008": "Authorization failed."
+  "10010": "Balance is insufficient."
+  "10011": "Redemption failed."
+  "10012": "Transaction failed."
+  "10018": "Transaction failed."
+  "10019": "Transaction Id check failed."
+  "10021": "Card deactivated."
+  "10022": "Amount more than max reload limit."
+  "10027": "Card is deactivated."
+  "10030": "Card deactivated. Zero balance."
+  "10034": "Amount less than min redeem limit."
+  "10035": "Amount less than min reload limit."
+  "10036": "Amount less than min load limit."
+  "10037": "Amount more than max redeem limit."
+  "10038": "Amount more than max load limit."
+  "10041": "Balance is less than first redemption limit."
+  "10042": "Insufficient balance."
+  "10052": "Cannot Cancel. Input mismatch."
+  "10058": "Card program group inactive."
+  "10059": "Amount incorrect."
+  "10060": "Either Card Number or Card Pin is Incorrect."
+  "10064": "Invalid batch."
+  "10084": "Transaction is already cancelled."
+  "10086": "Either card number or card pin is incorrect."
+  "10087": "Amount validation failed."
+  "10090": "Amount not a multiple of redeem unit."
+  "10105": "Amount being cancelled is exceeding the original transaction amount."
+  "10115": "Entered amount is greater than the configured decimal places."
+  "10116": "Only integer amount is allowed."
+  "10146": "Balance is less than min redemption limit."
+  "10197": "Amount is incorrect."
+  
+  # Original Transaction Issues
+  "10235": "OriginalTransactionId is not provided."
+  "10236": "OriginalTransactionId is incorrect."
+  "10237": "OriginalApprovalCode is not provided."
+  "10238": "OriginalApprovalCode is incorrect."
+  "10239": "OriginalBatchNumber is not provided."
+  "10240": "OriginalBatchNumber is incorrect."
+  "10256": "Execution of custom procedure for 10000 transaction failed."
+  
+  # Transaction / Input Mismatch
+  "10347": "Cannot process transaction, input mismatch."
+  "10724": "Amount to redeem is not a valid amount."
+  
+  # Authorization Token Issues
+  "10743": "Invalid Authorization Token."
+  "10744": "Authorization Token Expired."
+  "50000": "Authorization token provided is invalid."
+  
+  # Limits - Transaction Limits
+  "11020": "You have reached yearly transaction limit of 10000"
+  "11021": "You have reached monthly transaction limit of 10000"
+  "11024": "Please complete Full KYC with verification"
+  "11050": "PPI Program is not enabled for given customer."
+  "11052": "You have reached the maximum limit of adding beneficiaries. Please contact customer support."
+  "11061": "This transaction is not allowed on the wallet."
+  "11072": "You have reached daily UPI transaction limit."
+  "11082": "Transaction Authorization Failed."
+  "11083": "Transaction Authorization Declined."
+  "11098": "Transaction cannot be performed during the cool off period."
+  
+  # Wallet Issues
+  "10532": "Wallet Not Found."
+  "10551": "Wallet is Deactivated!."
+  "10556": "Card Not Available In Wallet. Add the Card to Wallet First."
+  
+  # KYC / Limits
+  "10573": "You have reached daily reload transaction limit of 10000. You can try again with an amount lesser than 5000."
+  "10575": "You have reached daily reload transaction limit of 10000"
+  "10576": "10000 is mandatory."
+  "10579": "You have exceeded the monthly redeem limit of 10000. Please try again with an amount lesser than 5000"
+  "10580": "You have exceeded the monthly redeem limit of 10000"
+  "10581": "You have exceeded the yearly redeem limit of 10000. Please try again with an amount lesser than 5000"
+  "10582": "You have exceeded the yearly redeem limit of 10000"
+  "10583": "Your overall monthly redeem will become 10000 and will surpass the limit of 5000, thus you cannot upgrade the KYC status."
+  "10584": "Your overall yearly redeem will become 10000 and will surpass the limit of 5000, thus you cannot upgrade the KYC status."
+  
+  # Load / Transfer Limits
+  "11016": "Customer not found."
+  "11017": "You have reached the yearly load limit.You can try again with an amount lesser than 10000."
+  "11018": "You have reached the monthly load limit.You can try again with an amount lesser than 10000."
+  "11019": "You have reached the maximum balance limit.You can try again with an amount lesser than 10000."
+  "11022": "Exceeded maximum wallets allowed per API request."
+  "11025": "Fund transfer of more than 10000 can be done after 30 minutes of adding a beneficiary. However you can transfer lesser than 10000."
+  "11026": "You have reached the monthly fund transfer limit of 10000"
+  "11038": "Fund Transfer is not enabled. Please reach customer support for more details."
+  "11043": "Downgrade from 10000 to 5000 is not allowed."
+  "11053": "The monthly transaction limit for the beneficiary is exceeding Rs. 10000. Please try with a lesser amount to proceed further."
+  "11056": "Cancel Redeem successful."
+  "11079": "Your overall balance will become 10000 and will surpass the limit of 5000, thus you cannot upgrade the KYC status."
+  
+  # Purchase Limits
+  "11100": "You have reached monthly transaction limit of 10000. You can try again with an amount lesser than 5000."
+  "11101": "You have reached daily transaction limit of 10000."
+  "11102": "You have reached daily transaction limit of 10000. You can try again with an amount lesser than 5000."
+  "11107": "You have reached the yearly purchase limit of 10000."
+  "11108": "You have reached the yearly purchase limit of 10000.You can try again with an amount lesser than 5000."
+  "11110": "You have reached the monthly purchase limit of 10000."
+  "11113": "You have reached the weekly purchase limit of 10000."
+  "11114": "You have reached the weekly purchase limit of 10000.You can try again with an amount lesser than 5000."
+  "11116": "You have reached the daily purchase limit of 10000."
+  "11117": "You have reached the daily purchase limit of 10000.You can try again with an amount lesser than 5000."
+  "11119": "You have reached the hourly purchase limit of 10000."
+  "11120": "You have reached the hourly purchase limit of 10000.You can try again with an amount lesser than 5000."
+  "11123": "You have reached the monthly purchase limit of 10000.You can try again with an amount lesser than 5000."
+  "11218": "You have already transferred 10000 this month. You can transfer up to 5000 more."
+  
+  # Timeout
+  "0091": "CBS Timeout"
+  
+  # Idempotency
+  "00094": "Duplicate request with same idempotency key"
+   
+  # Default
+  "default": "Transaction failed."

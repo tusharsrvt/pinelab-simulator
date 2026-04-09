@@ -1,0 +1,14 @@
+{
+  "WalletNumber": "$WALLET_NUMBER$",
+  "TransactionRefNo": "$TXN_REF_NO$",
+  "QueryType": "$QUERY_TYPE$",
+  "OriginalTransactionId": "$ORIGINAL_TXN_ID$",
+  "OriginalAmount": $AMOUNT$,
+  "TransactionStatus": "$TXN_STATUS$",
+  "DateAtServer": "$DATE_AT_SERVER$",
+  "ResponseCode": $RESPONSE_CODE$,
+  "ResponseMessage": "$RESPONSE_MESSAGE$",
+  "TransactionId": $TRANSACTION_ID$,
+  "ErrorCode": $ERROR_CODE$,
+  "ErrorDescription": "$ERROR_DESCRIPTION$"
+}

@@ -1,0 +1,14 @@
+{
+  "OriginalTransactionId": "$ORIGINAL_TXN_ID$",
+  "ReversalAmount": $AMOUNT$,
+  "CurrentBatchNumber": $CURRENT_BATCH_NUMBER$,
+  "WalletNumber": "$WALLET_NUMBER$",
+  "DateAtServer": "$DATE_AT_SERVER$",
+  "BatchNumber": $BATCH_NUMBER$,
+  "ResponseCode": $RESPONSE_CODE$,
+  "ResponseMessage": "$RESPONSE_MESSAGE$",
+  "TransactionId": $TRANSACTION_ID$,
+  "TransactionType": "$TRANSACTION_TYPE$",
+  "ErrorCode": $ERROR_CODE$,
+  "ErrorDescription": "$ERROR_DESCRIPTION$"
+}

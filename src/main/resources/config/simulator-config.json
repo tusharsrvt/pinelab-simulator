@@ -1,0 +1,103 @@
+{
+  "defaultConfig": {
+    "responseCode": "0000",
+    "responseTimeMs": 0,
+    "timeout": false
+  },
+  "idempotency": {
+    "enabled": true,
+    "expiryHours": 3,
+    "apis": ["debit", "credit", "ncmc-credit", "ncmc-check-status", "mandate-block-fund"]
+  },
+  "apis": {
+    "debit": {
+      "rules": [
+        { "match": ["0000"], "responseCode": "0000", "responseTimeMs": 0, "timeout": false },
+        { "match": ["00.*"], "responseCode": "0000", "responseTimeMs": 500, "timeout": false },
+        { "match": ["1000-2000"], "responseCode": "10001", "responseTimeMs": 0, "timeout": false },
+        { "match": ["3000-4000"], "responseCode": "0000", "responseTimeMs": 0, "timeout": true },
+        { "match": ["5000"], "responseCode": "10010", "responseTimeMs": 0, "timeout": false }
+      ]
+    },
+    "credit": {
+      "rules": [
+        { "match": ["0000"], "responseCode": "0000", "responseTimeMs": 0, "timeout": false },
+        { "match": ["1000-1500"], "responseCode": "10002", "responseTimeMs": 0, "timeout": false },
+        { "match": ["2000-3000"], "responseCode": "0000", "responseTimeMs": 1000, "timeout": false },
+        { "match": ["4000-5000"], "responseCode": "10532", "responseTimeMs": 0, "timeout": false }
+      ]
+    },
+    "debit-reversal": {
+      "rules": [
+        { "match": ["0000"], "responseCode": "0000", "responseTimeMs": 0, "timeout": false },
+        { "match": ["1000-2000"], "responseCode": "10003", "responseTimeMs": 0, "timeout": false },
+        { "match": ["3000-4000"], "responseCode": "0000", "responseTimeMs": 500, "timeout": false }
+      ]
+    },
+    "credit-reversal": {
+      "rules": [
+        { "match": ["0000"], "responseCode": "0000", "responseTimeMs": 0, "timeout": false },
+        { "match": ["1000-2000"], "responseCode": "10004", "responseTimeMs": 0, "timeout": false },
+        { "match": ["4000-5000"], "responseCode": "10005", "responseTimeMs": 0, "timeout": false }
+      ]
+    },
+    "ncmc-credit": {
+      "rules": [
+        { "match": ["0000"], "responseCode": "0000", "responseTimeMs": 0, "timeout": false },
+        { "match": ["5000-6000"], "responseCode": "10532", "responseTimeMs": 0, "timeout": false },
+        { "match": ["7000-8000"], "responseCode": "0000", "responseTimeMs": 200, "timeout": false }
+      ]
+    },
+    "ncmc-credit-reversal": {
+      "rules": [
+        { "match": ["0000"], "responseCode": "0000", "responseTimeMs": 0, "timeout": false },
+        { "match": ["1000-2000"], "responseCode": "10533", "responseTimeMs": 0, "timeout": false },
+        { "match": ["3000-4000"], "responseCode": "0000", "responseTimeMs": 300, "timeout": false }
+      ]
+    },
+    "validate-address": {
+      "rules": [
+        { "match": ["0000"], "responseCode": "0000", "responseTimeMs": 0, "timeout": false },
+        { "match": ["1000-2000"], "responseCode": "20001", "responseTimeMs": 0, "timeout": false },
+        { "match": ["5000"], "responseCode": "20002", "responseTimeMs": 0, "timeout": false },
+        { "match": ["8000-9000"], "responseCode": "0000", "responseTimeMs": 100, "timeout": false }
+      ]
+    },
+    "ncmc-validate-address": {
+      "rules": [
+        { "match": ["0000"], "responseCode": "0000", "responseTimeMs": 0, "timeout": false },
+        { "match": ["1000-2000"], "responseCode": "20501", "responseTimeMs": 0, "timeout": false },
+        { "match": ["5000-6000"], "responseCode": "20502", "responseTimeMs": 0, "timeout": false }
+      ]
+    },
+    "mandate-block-fund": {
+      "rules": [
+        { "match": ["0000"], "responseCode": "0000", "responseTimeMs": 0, "timeout": false },
+        { "match": ["7000-8000"], "responseCode": "11061", "responseTimeMs": 0, "timeout": false },
+        { "match": ["9000"], "responseCode": "11062", "responseTimeMs": 0, "timeout": false }
+      ]
+    },
+    "mandate-unblock-fund": {
+      "rules": [
+        { "match": ["0000"], "responseCode": "0000", "responseTimeMs": 0, "timeout": false },
+        { "match": ["1000-2000"], "responseCode": "11063", "responseTimeMs": 0, "timeout": false },
+        { "match": ["3000-4000"], "responseCode": "11064", "responseTimeMs": 0, "timeout": false }
+      ]
+    },
+    "check-status": {
+      "rules": [
+        { "match": ["0000"], "responseCode": "0000", "responseTimeMs": 0, "timeout": false },
+        { "match": ["1000-2000"], "responseCode": "30001", "responseTimeMs": 0, "timeout": false },
+        { "match": ["5000"], "responseCode": "30002", "responseTimeMs": 0, "timeout": false },
+        { "match": ["8000-9000"], "responseCode": "0000", "responseTimeMs": 200, "timeout": false }
+      ]
+    },
+    "ncmc-check-status": {
+      "rules": [
+        { "match": ["0000"], "responseCode": "0000", "responseTimeMs": 0, "timeout": false },
+        { "match": ["1000-2000"], "responseCode": "30501", "responseTimeMs": 0, "timeout": false },
+        { "match": ["5000-6000"], "responseCode": "30502", "responseTimeMs": 0, "timeout": false }
+      ]
+    }
+  }
+}

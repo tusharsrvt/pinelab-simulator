@@ -1,0 +1,12 @@
+{
+  "WalletNumber": "$WALLET_NUMBER$",
+  "Address": "$ADDRESS$",
+  "AddressType": "$ADDRESS_TYPE$",
+  "DateAtServer": "$DATE_AT_SERVER$",
+  "ResponseCode": $RESPONSE_CODE$,
+  "ResponseMessage": "$RESPONSE_MESSAGE$",
+  "TransactionId": $TRANSACTION_ID$,
+  "ValidationStatus": "$VALIDATION_STATUS$",
+  "ErrorCode": $ERROR_CODE$,
+  "ErrorDescription": "$ERROR_DESCRIPTION$"
+}

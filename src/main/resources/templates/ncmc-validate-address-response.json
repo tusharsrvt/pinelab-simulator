@@ -1,0 +1,7 @@
+{
+  "responseCode": $RESPONSE_CODE$,
+  "customerName": "$CUSTOMER_NAME$",
+  "accountNumber": "$ACCOUNT_NUMBER$",
+  "responseMessage": "$RESPONSE_MESSAGE$",
+  "vpa": "$VPA$"
+}
