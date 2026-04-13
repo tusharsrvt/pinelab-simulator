@@ -131,8 +131,9 @@ public class ResponseTemplateLoader {
         if (value instanceof Boolean) {
             return value.toString();
         }
-        // For strings, wrap in quotes
-        return "\"" + escapeJson(value.toString()) + "\"";
+        // Return value as-is - template already has quotes around placeholders
+        // so we don't add extra quotes
+        return escapeJson(value.toString());
     }
     
     /**
