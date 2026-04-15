@@ -8,7 +8,7 @@ APP_NAME="pinelab-cbs-simulator"
 JAR_FILE="${APP_NAME}.jar"
 
 # Default port (will be overridden by application.properties if set)
-PORT=${1:-8080}
+PORT=${1:-10002}
 
 # Get the directory where the script is located
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
